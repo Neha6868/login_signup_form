@@ -6,6 +6,7 @@ def home(request):
 
 # User Register
 def register(request):
+    print("register")
     form=UserCreationForm
     if request.method=='POST':
         regForm=UserCreationForm(request.POST)
